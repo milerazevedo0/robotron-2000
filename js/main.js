@@ -1,6 +1,7 @@
 
 const controle = document.querySelectorAll(".controle-ajuste")
 const estatisticas = document.querySelectorAll("[data-estatistica]")
+const corRobo = document.querySelector("#robo")
 const pecas = {
     "bracos": {
         "forca": 29,
@@ -60,3 +61,10 @@ function atualizaEstatisticas(peca){
     })
 
 }
+
+corRobo.addEventListener("click", () =>{
+    corRobo.src="../img/Robotron 2000 - "+cores[Math.floor(Math.random() * cores.length)]+".png"
+})
+
+let cores = ["Amarelo", "Azul", "Branco", "Preto", "Rosa", "Vermelho"]
+
